@@ -1,0 +1,1 @@
+APT::Update::Post-Invoke {"if [ -x /usr/local/bin/discord-auto-update.sh ]; then /usr/local/bin/discord-auto-update.sh; fi";};
