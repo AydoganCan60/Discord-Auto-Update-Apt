@@ -18,7 +18,6 @@ This repository provides an easy way to automatically or semi-automatically upda
 * File Descriptions
 * Installation (Step-by-Step)
 * Testing
-* Auto Execution (cron & systemd examples)
 * Troubleshooting / Logs
 * Releases (Alternative Method Section)
 * Contributing
