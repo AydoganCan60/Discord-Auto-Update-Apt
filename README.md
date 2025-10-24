@@ -148,53 +148,6 @@ sudo apt update
 
 ---
 
-## Automatic Execution Options
-
-### Option 1: Cron
-
-Run every day at 3:30 AM:
-
-```bash
-sudo crontab -e
-# Add this line:
-30 3 * * * /usr/local/bin/discord-auto-update.sh >> /var/log/discord-autoupdate.log 2>&1
-```
-
-### Option 2: systemd Timer
-
-Create `/etc/systemd/system/discord-autoupdate.service`:
-
-```ini
-[Unit]
-Description=Discord Auto Update
-
-[Service]
-Type=oneshot
-ExecStart=/usr/local/bin/discord-auto-update.sh
-```
-
-Then `/etc/systemd/system/discord-autoupdate.timer`:
-
-```ini
-[Unit]
-Description=Runs Discord Auto Update daily
-
-[Timer]
-OnCalendar=daily
-Persistent=true
-
-[Install]
-WantedBy=timers.target
-```
-
-Enable and start it:
-
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable --now discord-autoupdate.timer
-```
-
----
 
 ## Troubleshooting / Logs
 
