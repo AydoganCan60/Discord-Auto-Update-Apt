@@ -148,7 +148,6 @@ sudo apt update
 
 ---
 
-
 ## Troubleshooting / Logs
 
 To debug manually:
@@ -165,6 +164,15 @@ Logs:
 ---
 
 ## Releases
+
+### 🇹🇷 Türkiye için Özel Açıklama
+
+Türkiye'de Discord'a erişim engeli bulunduğundan, Discord'un resmi sitesine doğrudan istek gönderilememektedir. Bu nedenle `.deb` paketini indirmek için **proxychains** kullanılması gerekmektedir.
+
+Kurulum adımları `README.md` dosyasında ayrıntılı olarak açıklanmıştır. Ancak, `discord-auto-update.sh` dosyasını bu releases kısmından indirmeniz gerekmektedir.
+
+**Proxychains Kurulum Videosu:**
+[https://www.youtube.com/watch?v=c6hBJ017SH8&t=1s](https://www.youtube.com/watch?v=c6hBJ017SH8&t=1s)
 
 Check the [Releases](../../releases) section for pre-packaged `.deb` files or alternate installation methods.
 
